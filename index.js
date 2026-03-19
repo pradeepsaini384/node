@@ -52,7 +52,7 @@ app.get('/run', async (req, res) => {
 
     console.log('📱 Mobile view set');
 
-    await page.goto('https://trustme4u.com/flyingad/adflying912.php', {
+    await page.goto('https://airbet-aviator.com/jointoday/1.php', {
       waitUntil: 'networkidle2',
       timeout: 60000
     });
@@ -63,12 +63,12 @@ app.get('/run', async (req, res) => {
     await page.screenshot({ path: 'before.png', fullPage: true });
     console.log('📸 Screenshot saved (before)');
 
-    await page.waitForSelector('.btn', { timeout: 30000 });
+    await page.waitForSelector('.cta-btn', { timeout: 30000 });
 
     console.log('🔍 Button found');
 
     // Get button text
-    const text = await page.$eval('.btn', el => el.innerText.trim());
+    const text = await page.$eval('.cta-btn', el => el.innerText.trim());
     console.log('📝 Button text:', text);
 
     // (optional click — keep commented for now)
