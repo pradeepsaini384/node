@@ -72,8 +72,8 @@ app.get('/run', async (req, res) => {
     console.log('📝 Button text:', text);
 
     // (optional click — keep commented for now)
-    // await page.click('.btn');
-    // console.log('🖱 Button clicked');
+    await page.click('.btn');
+    console.log('🖱 Button clicked');
 
     // Screenshot after
     await page.screenshot({ path: 'after.png', fullPage: true });
