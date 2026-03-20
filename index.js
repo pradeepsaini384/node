@@ -52,7 +52,7 @@ app.get('/run', async (req, res) => {
 
     console.log('📱 Mobile view set');
 
-    await page.goto('https://airbet-aviator.com/jointoday/test.php', {
+    await page.goto('https://trustme4u.com/flyingad/adflying912.php', {
       waitUntil: 'networkidle2',
       timeout: 60000
     });
